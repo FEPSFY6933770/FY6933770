@@ -40,8 +40,7 @@
  }
  </style>
 
-<title>My Daily Activities</title>
-<script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
+
    </head>
 
  <meta name="viewport" content="width=device-width, initial-scale=1>     
@@ -131,26 +130,6 @@
    </tr>
    </table>
  More text to check it works here too.
-   <div id=”chart_div”></div>
-       <script type=”text/javascript”>
-             google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
-             google.charts.setOnLoadCallback(drawChart);
-         function drawChart() {
-                 var data = google.visualization.arrayToDataTable([
-                         [‘Task’, ‘Hours per Day’],
-                         [‘Work’, 8],
-                         [‘Sleep’, 8],[‘Eat’, 2],
-                         [‘Study’, 4],
-                         [‘Exercise’, 2]
-                 ]);
- 
-                 var options = {
-                     title: ‘My Daily Activities’
-                 };
-
-                 var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
-                 chart.draw(data, options);
-         }
  </script>
  </pre>
  </p>
@@ -178,7 +157,7 @@
 <script>
     async function getLastUpdatedTime() {
         const username = 'kh01284';
-        const repo = 'FY6933770';
+        const repo = 'FEPSFY6933770';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
